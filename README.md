@@ -21,3 +21,4 @@
     }
 
 (stolen from: http://netcell.github.io/2016/05/ligature-with-unsupported-font-in-atom/)
+and to get the styling for Operator Mono https://gist.github.com/brandondurham/3828ac42766f9f187c8e
