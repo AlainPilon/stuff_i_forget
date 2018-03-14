@@ -22,3 +22,29 @@
 
 (stolen from: http://netcell.github.io/2016/05/ligature-with-unsupported-font-in-atom/)
 and to get the styling for Operator Mono https://gist.github.com/brandondurham/3828ac42766f9f187c8e
+
+Styling to use Operator Mono:
+
+    atom-workspace,
+    atom-text-editor {
+        font-family: "OperatorMono-Light";
+        font-weight: normal;
+    }
+
+    atom-panel.tool-panel {
+    }
+
+    .editor .comment,
+    atom-text-editor.editor {
+        font-family: "OperatorMono-Light";
+        font-style: normal;
+    }
+
+    atom-text-editor.editor .syntax--comment {
+        font-family: "OperatorMono-LightItalic";
+        font-style: normal;
+    }
+
+    .syntax--keyword, .syntax--control, .syntax--attribute-name {
+      font-style: italic;
+    }
