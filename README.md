@@ -7,6 +7,21 @@
 
     git branch --merged master | grep -v master | xargs git branch -d
 
+# Ruby
+
+# Inject
+Group multiple items in a hash, when the keys are created dynamically
+
+``` Ruby
+commodities_per_material_types = production_weights.inject(Hash.new { |h, k| h[k] = [] }) do |memo, pw|
+    memo[pw.material_type.name] << pw.actual_commodities
+	memo
+end
+```
+
+We have to use `hash = Hash.new { |h, k| h[k] = [] }` so that each call to an unknown key of the hash returns a different Array instance. 
+
+
 # Atom
 
 ## Enable ligature with non ligatured fonts
