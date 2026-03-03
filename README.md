@@ -22,7 +22,17 @@ end
 We have to use `hash = Hash.new { |h, k| h[k] = [] }` so that each call to an unknown key of the hash returns a different Array instance. 
 
 
-# Atom
+# VS Code
+
+## Make the border between panel more visible:
+
+Open 'Preferences: Open User Settings (JSON)' and add this (for Nord theme):
+```
+"workbench.colorCustomizations": {
+   "editorGroup.border": "#EACA8C"
+},
+```
+
 
 ## Enable ligature with non ligatured fonts
 
